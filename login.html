@@ -43,11 +43,19 @@
             <div class="container p-5 my-5 border">
                 <img src="images/login_scr_logo.png" class="mx-auto d-block">
 
-            <form action="/action_page.php"></form>
+            <form action="/action_page.php" class="needs-validated"></form>
+
                 <div class="mb-3 mt-3">
+
                   <label for="email" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+
                 </div>
+                    
+
                 <div class="mb-3">
                   <label for="pwd" class="form-label">Password:</label>
                   <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
